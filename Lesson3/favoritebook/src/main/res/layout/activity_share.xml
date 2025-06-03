@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewDevBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewDevQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите название Вашей любимой книги"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите цитату из Вашей любимой книги"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="sendDataBack"
+            android:text="Отправить данные" />
+    </LinearLayout>
+</ScrollView>
